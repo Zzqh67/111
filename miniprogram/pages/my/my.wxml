@@ -1,0 +1,12 @@
+<icon-navigation></icon-navigation>
+<view class="container">
+  <view class="user-info-area">
+    <image class="avatar" src="{{userInfo.avatarUrl}}" />
+    <text class="nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="button-wrapper">
+    <button class="button-style" bindtap="goToPersonalInfo">个人信息</button>
+    <button class="button-style" bindtap="goToMatchRecord">约球记录</button>
+    <button class="button-style logout-button" bindtap="logout">退出登录</button> <!-- 新增退出登录按钮 -->
+  </view>
+</view>

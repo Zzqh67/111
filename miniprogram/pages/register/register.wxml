@@ -1,0 +1,14 @@
+<!-- 页面布局使用flex布局，垂直居中，输入框和按钮有统一的风格 -->
+<icon-navigation></icon-navigation>
+<view class="container">
+    <view class="input-box">
+        <input class="input" placeholder="请输入用户名" />
+    </view>
+    <view class="input-box">
+        <input password class="input" placeholder="请输入密码" />
+    </view>
+    <view class="input-box">
+        <button class="upload-btn" bindtap="doUpload">上传头像</button>
+    </view>
+    <button bindtap="doRegister" class="register-btn">注册</button>
+</view>

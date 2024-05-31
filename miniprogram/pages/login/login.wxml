@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="logo-container">
+    <image class="logo" src="/images/logo.png" mode="aspectFit"></image>
+  </view>
+  <view class="input-container">
+    <input class="input" type="text" placeholder="用户名" />
+  </view>
+  <view class="input-container">
+    <input class="input" password type="password" placeholder="密码" />
+  </view>
+  <button class="action-btn" bindtap="handleLogin">登录</button>
+  <button class="action-btn" bindtap="handleGoToRegister">注册</button> <!-- 添加注册按钮 -->
+</view>

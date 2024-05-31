@@ -1,0 +1,26 @@
+<icon-navigation></icon-navigation>
+<view class="container">
+  <view class="header">
+    <text class="title">篮球比赛</text>
+  </view>
+  <view class="game-list">
+    <block wx:for="{{games}}" wx:key="id">
+      <view class="game-item" bindtap="showGameDetails" data-id="{{item.id}}">
+        <text>{{item.name}}</text>
+        <text>{{item.date}}</text>
+        <text>{{item.location}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- 详细信息弹窗 -->
+  <view wx:if="{{showModal}}" class="modal">
+    <view class="modal-content">
+      <text class="close" bindtap="closeModal">X</text>
+      <text class="modal-title">{{selectedGame.name}}</text>
+      <text>{{selectedGame.date}}</text>
+      <text>{{selectedGame.location}}</text>
+      <text>{{selectedGame.details}}</text>
+      <button class="join-btn" bindtap="joinGame">加入比赛</button>
+    </view>
+  </view>
+</view>

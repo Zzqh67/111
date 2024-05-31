@@ -1,0 +1,5 @@
+
+<view class="icon-container">
+  <image src="/images/上一步_back.png" class="nav-icon" bindtap="goBack"/>
+  <image src="/images/首页_home.png" class="nav-icon home-icon" bindtap="goHome"/>
+</view>

@@ -1,0 +1,63 @@
+page {
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.logo-container {
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.input-container {
+  width: 100%; /* 使用100%宽度以适应屏幕 */
+  margin-bottom: 20px; /* 增大与下一个元素的间距 */
+}
+
+.input {
+  width: 100%; /* 使用100%宽度以填满容器 */
+  height: 50px; /* 增加输入框的高度 */
+  padding: 0 20px; /* 增大左右内边距，使文字与边缘保持一定间距 */
+  margin: 10px 0; /* 上下边距 */
+  font-size: 18px; /* 增大字体大小 */
+  border: 2px solid #ddd; /* 边框设置稍微粗一些 */
+  border-radius: 25px; /* 圆角设置为25px，使输入框看上去更圆润 */
+  box-sizing: border-box;
+  background-color: white;
+  outline: none; /* 去除点击时的边框 */
+}
+
+.input::placeholder {
+  color: #bbb;
+}
+
+.action-btn {
+  width: calc(100% - 40px); /* 或根据需要调整 */
+  height: 50px;
+  background-color: #1aad19;
+  color: white;
+  margin: 10px 0;  /* 增加上下边距 */
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex; /* 使用Flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.action-btn:active {
+  background-color: #169e16;
+}

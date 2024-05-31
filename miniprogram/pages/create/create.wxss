@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+	padding: 20px;
+	padding-top: 40px;
+  background-color: #FFFFFF; /* 以白色为背景色，可根据实际设计调整 */
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.picker, .input {
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影效果 */
+  font-size: 16px; /* 调整字体大小 */
+  transition: all 0.3s; /* 添加过渡效果 */
+  outline: none; /* 去除自动轮廓 */
+}
+
+.picker:hover, .input:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* 鼠标悬停时阴影效果更明显 */
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background-color: #007AFF; /* 使用更鲜艳的按钮颜色 */
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  font-size: 18px; /* 调整字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  letter-spacing: 1px; /* 增加字母间距 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 为按钮添加阴影 */
+  transition: background-color 0.3s; /* 添加背景色过渡效果 */
+}
+
+.submit-btn:active {
+  background-color: #0056b3; /* 点击时变为更深蓝色 */
+}

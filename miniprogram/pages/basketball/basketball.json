@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "篮球",
+  "usingComponents": {
+    "icon-navigation": "/components/icon-navigation/icon-navigation"
+  }
+}

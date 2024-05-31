@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/create/create",
+    "pages/my/my",
+    "pages/register/register",
+    "pages/verify/verify",
+    "pages/basketball/basketball",
+    "pages/personalInfo/personalInfo"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "加入球局",
+        "iconPath": "images/金牌_gold-medal.png",
+        "selectedIconPath": "images/金牌_gold-medal.png"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "text": "创建球局",
+        "iconPath": "images/添加_add-one.png",
+        "selectedIconPath": "images/添加_add-one.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/我的_me.png",
+        "selectedIconPath": "images/我的_me.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "GoTeamUp",
+    "navigationBarTextStyle": "black"
+  },
+  "scope": {
+    "userInfo": {
+      "desc": "你的个人信息将用于GoTeamUP"
+    }
+  }
+}

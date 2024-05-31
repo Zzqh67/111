@@ -1,0 +1,50 @@
+<icon-navigation></icon-navigation>
+<view class="container">
+    <!-- 1.球种选择 -->
+    <view class="input-container">
+        <picker mode="selector" range="{{sports}}" bindchange="onSportChange">
+            <view class="picker">{{selectedSport || '选择球类'}}</view>
+        </picker>
+    </view>
+    
+    <!-- 2.球局时间选择 -->
+    <view class="input-container">
+        <picker mode="date" bindchange="onDateChange">
+            <view class="picker">{{selectedDate || '选择日期'}}</view>
+        </picker>
+    </view>
+
+		<view class="input-container">
+        <picker mode="time" bindchange="onTimeChange">
+            <view class="picker">{{selectedTime || '选择时间'}}</view>
+        </picker>
+    </view>
+    
+    <!-- 3.所在地区 -->
+    <view class="input-container">
+        <picker mode="region" bindchange="onRegionChange">
+            <view class="picker">{{selectedRegion.join(' ') || '选择所在地区'}}</view>
+        </picker>
+    </view>
+    
+    <!-- 4.具体地点 -->
+    <view class="input-container">
+        <input class="input" placeholder="具体地点" bindinput="inputLocation" />
+    </view>
+    
+    <!-- 5.需要的人数和已有人数 -->
+    <view class="input-container">
+        <input class="input" placeholder="需要的人数" type="number" bindinput="inputRequiredCount" />
+    </view>
+
+		<view class="input-container">
+        <input class="input" placeholder="已有人数" type="number" bindinput="inputExistingCount" />
+    </view>
+    
+    <!-- 6.备注描述 -->
+    <view class="input-container">
+        <input class="input" placeholder="备注描述" bindinput="inputDescription" />
+    </view>
+    
+    <button class="submit-btn" bindtap="submitForm">创建球局</button>
+</view>

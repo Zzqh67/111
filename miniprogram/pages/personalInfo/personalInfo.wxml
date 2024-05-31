@@ -1,0 +1,22 @@
+<!-- pages/personalInfo/personalInfo.wxml -->
+<icon-navigation></icon-navigation>
+<view class="container">
+  <view class="info-item">
+    <input class="input" type="number" placeholder="身高(cm)" value="{{userInfo.height}}" bindinput="onInput" data-type="height"/>
+  </view>
+  <view class="info-item">
+    <input class="input" type="number" placeholder="体重(kg)" value="{{userInfo.weight}}" bindinput="onInput" data-type="weight"/>
+  </view>
+  <view class="info-item">
+    <picker mode="selector" range="{{genders}}" value="{{userInfo.genderIndex}}" bindchange="onGenderChange">
+      <view class="input picker">{{userInfo.gender}}</view>
+    </picker>
+  </view>
+  <view class="info-item">
+    <textarea class="input" placeholder="自我介绍" value="{{userInfo.bio}}" bindinput="onInput" data-type="bio"></textarea>
+  </view>
+  <view class="info-item">
+    <input class="input" type="number" placeholder="电话号码" value="{{userInfo.phone}}" bindinput="onInput" data-type="phone"/>
+  </view>
+  <button class="button-save" bindtap="onSave">保存</button>
+</view>

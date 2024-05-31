@@ -1,0 +1,20 @@
+.icon-container {
+  width: 100%;
+  position: absolute;
+  top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  padding: 0 20rpx;
+}
+
+.nav-icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+/* 添加类名来特别指定"主页"按钮的样式 */
+.home-icon {
+  margin-right: 40rpx; /* 假设我们要把"主页"图标往左边移动比原来更多的距离 */
+}

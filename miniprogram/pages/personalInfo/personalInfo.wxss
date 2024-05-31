@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+	background-color: #ffffff; /* 以纯白为背景色，保持简洁 */
+	margin-top: 50px;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.input, .picker {
+  width: 360px; /* 建议的最大宽度，确保在手机上居中显示 */
+  max-width: 100%; /* 适配不同屏幕宽度 */
+  padding: 15px;
+  border-radius: 25px; /* 圆角设计 */
+  border: none; /* 去除边框 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 轻微阴影效果提升层次感 */
+  font-size: 16px;
+  color: #333; /* 字体颜色 */
+  outline: none; /* 移除焦点轮廓 */
+  transition: all 0.3s; /* 平滑过渡效果 */
+}
+
+.picker {
+  cursor: pointer;
+}
+
+.input::placeholder {
+  color: #ccc; /* 占位文字颜色 */
+}
+
+.input:focus {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 聚焦时增强阴影 */
+}
+
+.textarea {
+  height: 90px; /* 文本域高度，允许多行输入 */
+  resize: none; /* 禁止调整文本域大小 */
+}
+
+.button-save {
+  padding: 30px;
+  background-color: #32cd32; /* 保存按钮颜色 */
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.button-save:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* 按钮悬停时增强阴影 */
+}

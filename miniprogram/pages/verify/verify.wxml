@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="input-box">
+        <input class="input" placeholder="用户名" bindinput="inputUsername" />
+    </view>
+    <view class="input-box">
+        <input password class="input" placeholder="密码" bindinput="inputPassword" />
+    </view>
+    <button bindtap="doLogin" class="login-btn">登录</button>
+</view>

@@ -1,0 +1,14 @@
+<!-- index页面的结构 -->
+<icon-navigation></icon-navigation>
+<view class="container">
+  
+    <button class="sport-button" bindtap="goToBasketball">
+        <image src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/8d93ca86e3954f72aa9a598f44a6e94b.png~tplv-0es2k971ck-image.png?rk3s=18ea6f23&x-expires=1747227742&x-signature=C2SXAT0NCQ0PRkrdV8Cc2zP80DY%3D" class="icon" />篮球
+    </button>
+    <button class="sport-button" bindtap="goToFootball">
+        <image src="https://p19-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/b88d4baf4fde4d6ca086bc3874ef02a6.png~tplv-0es2k971ck-image.png?rk3s=18ea6f23&x-expires=1747227543&x-signature=wB%2B6KtN8uoXxvdsBNSFSeDTgmyI%3D" class="icon" />足球
+    </button>
+    <button class="sport-button" bindtap="goToBadminton">
+        <image src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/4008dc0f10a940a080d48cf776521dbd.png~tplv-0es2k971ck-image.png?rk3s=18ea6f23&x-expires=1747228198&x-signature=IJBaY%2F9MrVqJ%2B%2FZSOscVRsti71c%3D" class="icon" />羽毛球
+    </button>
+</view>
